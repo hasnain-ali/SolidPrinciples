@@ -5,6 +5,10 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidPrinciples.WebApp", "SolidPrinciples.WebApp\SolidPrinciples.WebApp.csproj", "{B6581C64-5220-4DF7-BE90-AB3A7E706394}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidPrinciple.Security.Legacy", "SolidPrinciple.Security.Legacy\SolidPrinciple.Security.Legacy.csproj", "{CBDC8A74-1BDE-4A8C-9C75-9AB5FF464747}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01. Legacy", "01. Legacy", "{ED08D33E-F2EC-4EB3-BBF5-D07952BAE264}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +19,15 @@ Global
 		{B6581C64-5220-4DF7-BE90-AB3A7E706394}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6581C64-5220-4DF7-BE90-AB3A7E706394}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6581C64-5220-4DF7-BE90-AB3A7E706394}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBDC8A74-1BDE-4A8C-9C75-9AB5FF464747}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBDC8A74-1BDE-4A8C-9C75-9AB5FF464747}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBDC8A74-1BDE-4A8C-9C75-9AB5FF464747}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBDC8A74-1BDE-4A8C-9C75-9AB5FF464747}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CBDC8A74-1BDE-4A8C-9C75-9AB5FF464747} = {ED08D33E-F2EC-4EB3-BBF5-D07952BAE264}
 	EndGlobalSection
 EndGlobal

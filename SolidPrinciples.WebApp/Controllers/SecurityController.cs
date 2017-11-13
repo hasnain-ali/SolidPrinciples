@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using SolidPrinciple.Security.Legacy;
 using SolidPrinciples.WebApp.Models;
 
 namespace SolidPrinciples.WebApp.Controllers
@@ -20,7 +21,15 @@ namespace SolidPrinciples.WebApp.Controllers
         {
             if (ModelState.IsValid)
             {
-                
+                try
+                {
+                    new CredentialManager().ChangePassword(model.CurrentPassword, model.NewPassword, model.ConfirmedNewPassword);
+                    ViewData.Add("Message", "Your password has been changed successfully");
+                }
+                catch (Exception ex)
+                {
+                    ViewData.Add("ErrorMessage", ex.Message);
+                }    
             }
 
             return View();

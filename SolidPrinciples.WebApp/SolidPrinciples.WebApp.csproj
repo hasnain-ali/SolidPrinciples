@@ -167,6 +167,12 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SolidPrinciple.Security.Legacy\SolidPrinciple.Security.Legacy.csproj">
+      <Project>{cbdc8a74-1bde-4a8c-9c75-9ab5ff464747}</Project>
+      <Name>SolidPrinciple.Security.Legacy</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
