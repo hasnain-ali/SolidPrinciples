@@ -23,7 +23,7 @@ namespace SolidPrinciples.WebApp.Controllers
             {
                 try
                 {
-                    new CredentialManager().ChangePassword(model.CurrentPassword, model.NewPassword, model.ConfirmedNewPassword);
+                    new CredentialService().ChangePassword(GetCurrentUser(), model.CurrentPassword, model.NewPassword, model.ConfirmedNewPassword);
                     ViewData.Add("Message", "Your password has been changed successfully");
                 }
                 catch (Exception ex)
@@ -33,6 +33,11 @@ namespace SolidPrinciples.WebApp.Controllers
             }
 
             return View();
+        }
+
+        private static string GetCurrentUser()
+        {
+            return "demo.user";
         }
     }
 }

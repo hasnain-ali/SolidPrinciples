@@ -8,10 +8,15 @@ using System.Threading.Tasks;
 
 namespace SolidPrinciple.Security.Legacy
 {
-    public class CredentialManager
+    public class CredentialService
     {
-        public void ChangePassword(string currentPassword, string newPassword, string confirmNewPassword)
+        public void ChangePassword(string username, string currentPassword, string newPassword, string confirmNewPassword)
         {
+            if (string.IsNullOrWhiteSpace(username))
+            {
+                throw new ArgumentNullException("username");
+            }
+
             if (string.IsNullOrWhiteSpace(currentPassword))
             {
                 throw new ArgumentNullException("currentPassword");

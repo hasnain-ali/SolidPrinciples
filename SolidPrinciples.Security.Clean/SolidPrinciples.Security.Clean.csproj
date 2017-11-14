@@ -39,7 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CredentialManager.cs" />
+    <Compile Include="CredentialService.cs" />
     <Compile Include="Credentials\PasswordEmailNotifier.cs" />
     <Compile Include="Credentials\PasswordLowercaseValidator.cs" />
     <Compile Include="Credentials\PasswordNumberValidator.cs" />
