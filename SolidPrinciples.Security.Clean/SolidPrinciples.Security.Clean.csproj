@@ -40,7 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CredentialService.cs" />
-    <Compile Include="Credentials\PasswordEmailNotifier.cs" />
+    <Compile Include="Notification\PasswordEmailNotifier.cs" />
     <Compile Include="Credentials\PasswordLowercaseValidator.cs" />
     <Compile Include="Credentials\PasswordNumberValidator.cs" />
     <Compile Include="Credentials\PasswordUppercaseValidator.cs" />

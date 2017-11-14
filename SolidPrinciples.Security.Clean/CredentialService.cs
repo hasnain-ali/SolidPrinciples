@@ -5,6 +5,7 @@ using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using SolidPrinciples.Security.Clean.Credentials;
+using SolidPrinciples.Security.Clean.Notification;
 
 namespace SolidPrinciples.Security.Clean
 {
