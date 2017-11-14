@@ -20,6 +20,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -168,9 +169,9 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SolidPrinciple.Security.Legacy\SolidPrinciple.Security.Legacy.csproj">
-      <Project>{cbdc8a74-1bde-4a8c-9c75-9ab5ff464747}</Project>
-      <Name>SolidPrinciple.Security.Legacy</Name>
+    <ProjectReference Include="..\SolidPrinciples.Security.Clean\SolidPrinciples.Security.Clean.csproj">
+      <Project>{80199055-628d-42a6-9748-d34152c8d140}</Project>
+      <Name>SolidPrinciples.Security.Clean</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
