@@ -17,25 +17,25 @@ namespace SolidPrinciples.Security.Clean.Tests.Credentials
             Assert.Throws<ArgumentNullException>(() => pv.IsValid(null));
         }
 
-        [Theory(DisplayName = "PasswordLengthValidator_IsValid_ReturnsTrue")]
-        [InlineData("Test@123")]
-        [InlineData("Test@1234")]
-        [InlineData("ThisIsThePassword ThisIsThePassword ThisIsThePassword ThisIsThePassword ThisIsThePassword ThisIsThePassword ThisIsThePassword ThisIsThePassword ThisIsThePassword ThisIsThePassword ThisIsThePassword ThisIsThePassword ThisIsThePassword ThisIsThePassword This")] // 256 Chars
-        [InlineData("ThisIsThePassword")]
-        public void PasswordLengthValidator_IsValid_ReturnsTrue(string password)
-        {
-            Assert.True(new PasswordLengthValidator().IsValid(password));
-        }
-
-        [Theory(DisplayName = "PasswordLengthValidator_IsValid_ReturnsTrue")]
+        [Theory(DisplayName = "PasswordLengthValidator_IsValid_WhenInvalidValue_ReturnsFalse")]
         [InlineData("")]
         [InlineData(" ")]
         [InlineData("T")]
         [InlineData("Test@12")]
         [InlineData("ThisIsThePassword ThisIsThePassword ThisIsThePassword ThisIsThePassword ThisIsThePassword ThisIsThePassword ThisIsThePassword ThisIsThePassword ThisIsThePassword ThisIsThePassword ThisIsThePassword ThisIsThePassword ThisIsThePassword ThisIsThePassword This1")] // 257 chars
-        public void PasswordLengthValidator_IsValid_ReturnsFalse(string password)
+        public void PasswordLengthValidator_IsValid_WhenInvalidValue_ReturnsFalse(string password)
         {
             Assert.False(new PasswordLengthValidator().IsValid(password));
+        }
+
+        [Theory(DisplayName = "PasswordLengthValidator_IsValid_WhenValidValue_ReturnsTrue")]
+        [InlineData("Test@123")]
+        [InlineData("Test@1234")]
+        [InlineData("ThisIsThePassword ThisIsThePassword ThisIsThePassword ThisIsThePassword ThisIsThePassword ThisIsThePassword ThisIsThePassword ThisIsThePassword ThisIsThePassword ThisIsThePassword ThisIsThePassword ThisIsThePassword ThisIsThePassword ThisIsThePassword This")] // 256 Chars
+        [InlineData("ThisIsThePassword")]
+        public void PasswordLengthValidator_IsValid_WhenValidValue_ReturnsTrue(string password)
+        {
+            Assert.True(new PasswordLengthValidator().IsValid(password));
         }
     }
 }

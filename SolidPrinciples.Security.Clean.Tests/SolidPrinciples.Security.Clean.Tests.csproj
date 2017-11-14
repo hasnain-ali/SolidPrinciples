@@ -57,6 +57,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Credentials\PasswordLengthValidatorTests.cs" />
+    <Compile Include="Credentials\PasswordLowercaseValidatorTests.cs" />
+    <Compile Include="Credentials\PasswordNumberValidatorTests.cs" />
+    <Compile Include="Credentials\PasswordUppercaseValidatorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
