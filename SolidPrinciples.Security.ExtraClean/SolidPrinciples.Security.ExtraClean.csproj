@@ -45,7 +45,10 @@
     <Compile Include="Credentials\PasswordNumberValidator.cs" />
     <Compile Include="Credentials\PasswordUppercaseValidator.cs" />
     <Compile Include="Credentials\PasswordValidator.cs" />
-    <Compile Include="Notification\PasswordEmailNotifier.cs" />
+    <Compile Include="Notification\ForgetPasswordNotifier.cs" />
+    <Compile Include="Notification\IEmailNotifier.cs" />
+    <Compile Include="Notification\ISmsNotifier.cs" />
+    <Compile Include="Notification\PasswordChangeNotifier.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

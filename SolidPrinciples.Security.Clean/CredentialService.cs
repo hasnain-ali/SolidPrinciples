@@ -64,7 +64,7 @@ namespace SolidPrinciples.Security.Clean
             }
 
             // All done, now send email
-            new PasswordEmailNotifier().SendEmail("some.one@somewhere.com");
+            new PasswordChangeNotifier().SendEmail("some.one@somewhere.com");
         }
     }
 }

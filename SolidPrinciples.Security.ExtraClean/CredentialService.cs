@@ -51,8 +51,10 @@ namespace SolidPrinciples.Security.ExtraClean
                 throw new ArgumentException(passwordValidationErrorMessage, "newPassword");
             }
 
-            // All done, now send email
-            new PasswordEmailNotifier().SendEmail("some.one@somewhere.com");
+            // All done, now send email and SMS
+            var passwordChangeNotifier = new PasswordChangeNotifier();
+            passwordChangeNotifier.SendEmail("some.one@somewhere.com");
+            passwordChangeNotifier.SendSms("+441234567890");
         }
     }
 }

@@ -1,8 +1,9 @@
-﻿using System.Net.Mail;
+﻿using System.Diagnostics;
+using System.Net.Mail;
 
 namespace SolidPrinciples.Security.ExtraClean.Notification
 {
-    public class PasswordEmailNotifier
+    public class ForgetPasswordNotifier : IEmailNotifier
     {
         public void SendEmail(string toEmailAddress)
         {
@@ -11,7 +12,7 @@ namespace SolidPrinciples.Security.ExtraClean.Notification
                 DeliveryMethod = SmtpDeliveryMethod.SpecifiedPickupDirectory,
                 PickupDirectoryLocation = @"c:\testemail"
             };
-            smtpClient.Send("support@achilles.com", toEmailAddress, "Password changed", "Hi Some One, your pass has been changed successfully");
+            smtpClient.Send("support@achilles.com", toEmailAddress, "Forget Password", "Hi Some One, please click here to reset your password. Thank you.");
         }
     }
 }
