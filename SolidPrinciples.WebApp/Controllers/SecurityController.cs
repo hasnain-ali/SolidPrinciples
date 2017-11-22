@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using SolidPrinciples.Security.Clean;
+using SolidPrinciples.Security.ExtraClean;
 using SolidPrinciples.WebApp.Models;
 
 namespace SolidPrinciples.WebApp.Controllers

@@ -45,22 +45,10 @@ namespace SolidPrinciples.Security.ExtraClean
                 throw new ArgumentException("Comfirm password is different then the new password");
             }
 
-            if (!new PasswordLengthValidator().IsValid(newPassword))
+            string passwordValidationErrorMessage;
+            if (!new PasswordValidator().TryValidate(newPassword, out passwordValidationErrorMessage))
             {
-                throw new ArgumentException("Invalid length for new password", "newPassword");
-            }
-
-            if (!new PasswordUppercaseValidator().IsValid(newPassword))
-            {
-                throw new ArgumentException("No upper case letter in new password", "newPassword");
-            }
-            else if (!new PasswordLowercaseValidator().IsValid(newPassword))
-            {
-                throw new ArgumentException("No lower case letter in new password", "newPassword");
-            }
-            else if (!new PasswordNumberValidator().IsValid(newPassword))
-            {
-                throw new ArgumentException("No number in new password", "newPassword");
+                throw new ArgumentException(passwordValidationErrorMessage, "newPassword");
             }
 
             // All done, now send email
