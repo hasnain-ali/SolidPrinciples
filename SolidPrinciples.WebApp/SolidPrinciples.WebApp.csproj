@@ -169,9 +169,9 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SolidPrinciples.Security.ExtraClean\SolidPrinciples.Security.ExtraClean.csproj">
-      <Project>{0ac67df6-a52f-4c37-8ae1-afc2f728c6fe}</Project>
-      <Name>SolidPrinciples.Security.ExtraClean</Name>
+    <ProjectReference Include="..\SolidPrinciples.Security.SuperClean\SolidPrinciples.Security.SuperClean.csproj">
+      <Project>{98665ac7-8071-48be-8871-fd8b44bf5422}</Project>
+      <Name>SolidPrinciples.Security.SuperClean</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

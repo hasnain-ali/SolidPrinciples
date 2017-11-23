@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidPrinciples.WebApp", "SolidPrinciples.WebApp\SolidPrinciples.WebApp.csproj", "{B6581C64-5220-4DF7-BE90-AB3A7E706394}"
 EndProject
@@ -20,6 +20,12 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03. ExtraClean", "03. ExtraClean", "{530165B3-3EC1-48A5-BC3D-60B14790B9D4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidPrinciples.Security.ExtraClean.Tests", "SolidPrinciples.Security.ExtraClean.Tests\SolidPrinciples.Security.ExtraClean.Tests.csproj", "{5E9713BB-8D7B-4519-824E-18C45B0DA194}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidPrinciples.Security.SuperClean", "SolidPrinciples.Security.SuperClean\SolidPrinciples.Security.SuperClean.csproj", "{98665AC7-8071-48BE-8871-FD8B44BF5422}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidPrinciples.Security.SuperClean.Tests", "SolidPrinciples.Security.SuperClean.Tests\SolidPrinciples.Security.SuperClean.Tests.csproj", "{A46F1E4D-274A-4A1C-B41E-2893F3B33AB5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04. SuperClean", "04. SuperClean", "{54C9B2A0-7E89-487A-9AEF-5FAD1C03DE0B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +57,14 @@ Global
 		{5E9713BB-8D7B-4519-824E-18C45B0DA194}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E9713BB-8D7B-4519-824E-18C45B0DA194}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E9713BB-8D7B-4519-824E-18C45B0DA194}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98665AC7-8071-48BE-8871-FD8B44BF5422}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98665AC7-8071-48BE-8871-FD8B44BF5422}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98665AC7-8071-48BE-8871-FD8B44BF5422}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98665AC7-8071-48BE-8871-FD8B44BF5422}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A46F1E4D-274A-4A1C-B41E-2893F3B33AB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A46F1E4D-274A-4A1C-B41E-2893F3B33AB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A46F1E4D-274A-4A1C-B41E-2893F3B33AB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A46F1E4D-274A-4A1C-B41E-2893F3B33AB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -61,5 +75,7 @@ Global
 		{D1F86715-EF85-4EAB-A17B-2381AD59F016} = {FE0C7C97-5504-46D0-88C6-2A56407912AF}
 		{0AC67DF6-A52F-4C37-8AE1-AFC2F728C6FE} = {530165B3-3EC1-48A5-BC3D-60B14790B9D4}
 		{5E9713BB-8D7B-4519-824E-18C45B0DA194} = {530165B3-3EC1-48A5-BC3D-60B14790B9D4}
+		{98665AC7-8071-48BE-8871-FD8B44BF5422} = {54C9B2A0-7E89-487A-9AEF-5FAD1C03DE0B}
+		{A46F1E4D-274A-4A1C-B41E-2893F3B33AB5} = {54C9B2A0-7E89-487A-9AEF-5FAD1C03DE0B}
 	EndGlobalSection
 EndGlobal
