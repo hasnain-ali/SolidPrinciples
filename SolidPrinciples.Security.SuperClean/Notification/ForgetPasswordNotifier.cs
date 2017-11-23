@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using SolidPrinciples.Security.Interfaces.Notification;
+using System.Diagnostics;
 using System.Net.Mail;
 
 namespace SolidPrinciples.Security.SuperClean.Notification

@@ -1,8 +1,9 @@
-﻿using System;
+﻿using SolidPrinciples.Security.Interfaces.Credentials;
+using System;
 
 namespace SolidPrinciples.Security.SuperClean.Credentials
 {
-    public class PasswordValidator
+    public class PasswordValidator : IPasswordValidator
     {
         public bool TryValidate(string password, out string errorMessage)
         {

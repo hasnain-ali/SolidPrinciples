@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SolidPrinciples.Security.SuperClean.Notification
+namespace SolidPrinciples.Security.Interfaces.Notification
 {
     public interface ISmsNotifier
     {

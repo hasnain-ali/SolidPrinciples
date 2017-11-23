@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidPrinciples.Security.Su
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04. SuperClean", "04. SuperClean", "{54C9B2A0-7E89-487A-9AEF-5FAD1C03DE0B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidPrinciples.Security.Interfaces", "SolidPrinciples.Security.Interfaces\SolidPrinciples.Security.Interfaces.csproj", "{047FE56B-7693-4C03-8A9D-CBF6673A2B15}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,6 +67,10 @@ Global
 		{A46F1E4D-274A-4A1C-B41E-2893F3B33AB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A46F1E4D-274A-4A1C-B41E-2893F3B33AB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A46F1E4D-274A-4A1C-B41E-2893F3B33AB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{047FE56B-7693-4C03-8A9D-CBF6673A2B15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{047FE56B-7693-4C03-8A9D-CBF6673A2B15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{047FE56B-7693-4C03-8A9D-CBF6673A2B15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{047FE56B-7693-4C03-8A9D-CBF6673A2B15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -77,5 +83,6 @@ Global
 		{5E9713BB-8D7B-4519-824E-18C45B0DA194} = {530165B3-3EC1-48A5-BC3D-60B14790B9D4}
 		{98665AC7-8071-48BE-8871-FD8B44BF5422} = {54C9B2A0-7E89-487A-9AEF-5FAD1C03DE0B}
 		{A46F1E4D-274A-4A1C-B41E-2893F3B33AB5} = {54C9B2A0-7E89-487A-9AEF-5FAD1C03DE0B}
+		{047FE56B-7693-4C03-8A9D-CBF6673A2B15} = {54C9B2A0-7E89-487A-9AEF-5FAD1C03DE0B}
 	EndGlobalSection
 EndGlobal

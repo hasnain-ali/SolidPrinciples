@@ -169,6 +169,10 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SolidPrinciples.Security.Interfaces\SolidPrinciples.Security.Interfaces.csproj">
+      <Project>{047fe56b-7693-4c03-8a9d-cbf6673a2b15}</Project>
+      <Name>SolidPrinciples.Security.Interfaces</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SolidPrinciples.Security.SuperClean\SolidPrinciples.Security.SuperClean.csproj">
       <Project>{98665ac7-8071-48be-8871-fd8b44bf5422}</Project>
       <Name>SolidPrinciples.Security.SuperClean</Name>

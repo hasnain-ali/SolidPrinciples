@@ -6,11 +6,32 @@ using System.Text;
 using System.Threading.Tasks;
 using SolidPrinciples.Security.SuperClean.Credentials;
 using SolidPrinciples.Security.SuperClean.Notification;
+using SolidPrinciples.Security.Interfaces;
+using SolidPrinciples.Security.Interfaces.Credentials;
+using SolidPrinciples.Security.Interfaces.Notification;
 
 namespace SolidPrinciples.Security.SuperClean
 {
-    public class CredentialService
+    public class CredentialService : ICredentialService
     {
+        private IPasswordValidator _passwordValidator;
+        private IEmailNotifier _emailNotifier;
+        private ISmsNotifier _smsNotifier;
+
+        public CredentialService()
+        {
+            _passwordValidator = new PasswordValidator();
+            _emailNotifier = new PasswordChangeNotifier();
+            _smsNotifier = new PasswordChangeNotifier();
+        }
+
+        public CredentialService(IPasswordValidator passwordValidator, IEmailNotifier emailNotifier, ISmsNotifier smsNotifier)
+        {
+            _passwordValidator = passwordValidator;
+            _emailNotifier = emailNotifier;
+            _smsNotifier = smsNotifier;
+        }
+
         public void ChangePassword(string username, string currentPassword, string newPassword, string confirmNewPassword)
         {
             if (string.IsNullOrWhiteSpace(username))
@@ -46,15 +67,14 @@ namespace SolidPrinciples.Security.SuperClean
             }
 
             string passwordValidationErrorMessage;
-            if (!new PasswordValidator().TryValidate(newPassword, out passwordValidationErrorMessage))
+            if (!_passwordValidator.TryValidate(newPassword, out passwordValidationErrorMessage))
             {
                 throw new ArgumentException(passwordValidationErrorMessage, "newPassword");
             }
 
             // All done, now send email and SMS
-            var passwordChangeNotifier = new PasswordChangeNotifier();
-            passwordChangeNotifier.SendEmail("some.one@somewhere.com");
-            passwordChangeNotifier.SendSms("+441234567890");
+            _emailNotifier.SendEmail("some.one@somewhere.com");
+            _smsNotifier.SendSms("+441234567890");
         }
     }
 }

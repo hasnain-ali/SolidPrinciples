@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SolidPrinciples.Security.Interfaces.Notification;
+using System;
 using System.Diagnostics;
 using System.Net.Mail;
 
